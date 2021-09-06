@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Container, Navbar, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, withRouter} from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./styles.css";
-export default class NavBar extends Component {
+ class NavBar extends Component {
   render() {
     return (
       <Navbar expand="lg" className="blog-navbar" fixed="top">
@@ -30,8 +30,11 @@ export default class NavBar extends Component {
             </svg>
             Post Article
           </Button>
+          <Link to="/login">Login</Link>
         </Container>
       </Navbar>
     );
   }
 }
+
+export default withRouter(NavBar);
