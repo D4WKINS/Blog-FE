@@ -24,7 +24,9 @@ class Login extends Component {
              <Form className="pt-5">
            <div className="text-center">Dont have an account?<Link to="/signup"> Sign Up Here</Link></div>
             <div className="text-center my-2">or</div>
-            <Link to={"/login/google"} className="d-block text-center p-2" style={{border:"solid 2px lightgrey",width:"100%"}}>Login with Google</Link>
+
+            <a href="http://localhost:3001/login/google" className="d-block text-center p-2" style={{border:"solid 2px lightgrey",width:"100%"}}>Login with Google</a>
+               
                 <h3 className="text-left mt-3">Login</h3>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
